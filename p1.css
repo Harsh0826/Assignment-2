@@ -1,0 +1,84 @@
+ul{
+			padding: 12px;
+		}
+		nav{
+
+			float: left;
+			width: 20%;
+			height: 450px;
+			padding: 20px;
+			border-spacing: 40px;
+			background-color:#b3fff0;
+		}
+		section: after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		article {
+			float:left;
+			padding: 20px;
+			width: 72%;
+			height: 430px;
+			background-color:#CBF074;
+
+		}
+		header{
+			color: #24029F;
+			font-size: 35px;
+			background-color: #EF9B30;
+
+		}
+		body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.faculty{
+ width: 25%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.centered {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
